@@ -1,0 +1,94 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Full viewport height */
+  text-align: center;
+}
+
+h2{
+  color: blanchedalmond;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: aqua;
+  font-style: bold;
+}
+
+.board {
+  margin: 15px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  /* background: #b7e2f0; */
+  border: 2px solid #f1ecb8;
+  font-size:8dvw;
+  background: -webkit-linear-gradient(#e7e3b5, #333333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 2px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+button{
+  color: rgb(229, 193, 10);
+}
+
+/* Base size for squares */
+.square {
+  width: 100px;
+  height: 100px;
+  color: rgb(23, 23, 93);
+}
+
+/* Adjust sizes for larger screens */
+@media (min-width: 600px) {
+  .square {
+    width: 150px;
+    height: 150px;
+  }
+
+  .status .square h2 {
+    font-size: 32px;
+  }
+}
+
+/* Adjust sizes for smaller screens */
+@media (max-width: 599px) {
+  .square {
+    width: 60px;
+    height: 60px;
+  }
+
+  .status h2 .square {
+    font-size: 18px;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 400px) {
+  .square {
+    width: 40px;
+    height: 40px;
+  }
+
+  .status h2 .square{
+    font-size: 16px;
+  }
+}
