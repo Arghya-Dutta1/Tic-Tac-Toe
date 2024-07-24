@@ -21,6 +21,7 @@ function App() {
     <div className="App">
       {!namesSet ? (
         <div>
+          <p className="heading">Tic Tac Toe</p>
           <button onClick={handleNamesSubmit}>Set Player Names</button>
         </div>
       ) : (
