@@ -16,3 +16,6 @@ This is a simple Tic Tac Toe game implemented using React. The game allows two p
 - Visual Studio Code: Preferred IDE for development.
 - Google Chrome: Recommended browser for the best developer experience.
 - Node.js: Version 20.x LTS version.
+## Screenshot
+![tictactoe](https://github.com/user-attachments/assets/8c6e6773-94b7-40e5-a228-1d13b2f685f9)
+
